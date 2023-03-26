@@ -27,8 +27,8 @@ const destFolder = `./docs`
 export const path = {
   watch: {
     emails: `${srcFolder}/{pages,layouts,partials}/**/*.html`,
-    styles: `${srcFolder}/assets/scss/**/*.scss`,
-    images: `${srcFolder}/assets/img/**/*`,
+    styles: `${srcFolder}/scss/**/*.scss`,
+    images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif}`,
   },
   rootFolder: rootFolder,
   srcFolder: srcFolder,
@@ -74,7 +74,7 @@ const emails = () => {
 
 /** Styles */
 const styles = () => {
-  return gulp.src(`${srcFolder}/assets/scss/app.scss`)
+  return gulp.src(`${srcFolder}/scss/app.scss`)
   .pipe(sass.sync(
     {includePaths: ['node_modules/foundation-emails/scss']}
   ))
@@ -85,13 +85,13 @@ const styles = () => {
 
 /** Images */
 const images = () => {
-  return gulp.src([`${srcFolder}/assets/img/**/*`, `!${srcFolder}/assets/img/archive/**/*`])
-  .pipe(newer(`${destFolder}/assets/img`))
+  return gulp.src([`${srcFolder}/images/**/*.{jpg,jpeg,png,gif}`, `!${srcFolder}/images/archive/**/*`])
+  .pipe(newer(`${destFolder}/images`))
   .pipe(imagemin({
     quality: 80, // jpg
     optimizationLevel: 5, // png
   }))
-  .pipe(gulp.dest(`${destFolder}/assets/img`))
+  .pipe(gulp.dest(`${destFolder}/images`))
   .pipe(browserSync.stream())
 }
 
