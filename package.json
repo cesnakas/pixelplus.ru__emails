@@ -1,6 +1,6 @@
 {
   "name": "pixelplus.ru__emails",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "emails",
   "main": "gulpfile.js",
   "type": "module",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/cesnakas/pixelplus-emails#readme",
   "devDependencies": {
     "browser-sync": "latest",
+    "del": "latest",
     "gulp": "latest",
     "gulp-htmlmin": "latest",
     "gulp-imagemin": "latest",
@@ -28,7 +29,6 @@
     "gulp-sass": "latest",
     "inky": "latest",
     "panini": "latest",
-    "rimraf": "latest",
     "sass": "latest"
   }
 }

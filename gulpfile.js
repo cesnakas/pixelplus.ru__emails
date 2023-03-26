@@ -2,7 +2,7 @@ import * as nodePath from 'path'
 import fs            from 'fs'
 
 import gulp          from 'gulp'
-import rimraf        from 'rimraf'
+import {deleteAsync} from 'del'
 import browserSync   from 'browser-sync'
 import panini        from 'panini'
 import inky          from 'inky'
@@ -38,8 +38,8 @@ export const path = {
 
 
 /** Reset */
-const reset = (done) => {
-  rimraf(`${destFolder}`, done)
+const reset = () => {
+  return deleteAsync(`${destFolder}`)
 }
 
 
@@ -58,13 +58,13 @@ const server = (done) => {
 /** Emails */
 const emails = () => {
   panini.refresh()
-  return gulp.src(['src/pages/**/*.html', '!src/pages/archive/**/*.html'], {})
+  return gulp.src([`${srcFolder}/pages/**/*.html`, `!${srcFolder}/pages/archive/**/*.html`], {})
   .pipe(panini({
-    root:     'src/pages/',
-    layouts:  'src/layouts/',
-    partials: 'src/partials/',
-    helpers:  'src/pages/helpers/',
-    data:     'src/pages/data/'
+    root:     `${srcFolder}/pages/`,
+    layouts:  `${srcFolder}/layouts/`,
+    partials: `${srcFolder}/partials/`,
+    helpers:  `${srcFolder}/pages/helpers/`,
+    data:     `${srcFolder}/pages/data/`
   }))
   .pipe(inky())
   .pipe(gulp.dest(`${destFolder}`), {})
@@ -74,7 +74,7 @@ const emails = () => {
 
 /** Styles */
 const styles = () => {
-  return gulp.src('src/assets/scss/app.scss')
+  return gulp.src(`${srcFolder}/assets/scss/app.scss`)
   .pipe(sass.sync(
     {includePaths: ['node_modules/foundation-emails/scss']}
   ))
@@ -85,7 +85,7 @@ const styles = () => {
 
 /** Images */
 const images = () => {
-  return gulp.src(['src/assets/img/**/*', '!src/assets/img/archive/**/*'])
+  return gulp.src([`${srcFolder}/assets/img/**/*`, `!${srcFolder}/assets/img/archive/**/*`])
   .pipe(newer(`${destFolder}/assets/img`))
   .pipe(imagemin({
     quality: 80, // jpg
@@ -98,7 +98,7 @@ const images = () => {
 
 /** Inline CSS */
 const inline = () => {
-  return gulp.src('dist/**/*.html')
+  return gulp.src(`${destFolder}/**/*.html`)
   .pipe(inlineCss({
     // Встраивать стили в файлы <style></style> [default: true]
     applyStyleTags: true,
