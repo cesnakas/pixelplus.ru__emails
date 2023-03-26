@@ -1,0 +1,108 @@
+
+html.quiz,
+body.quiz,
+.body.quiz {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  background: url("./assets/img/quiz/bg.png") center repeat #050025 !important;
+}
+
+.quiz {
+
+  a {color: #BC1818}
+  p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #2D2D2D;
+  }
+
+  // Header
+  .header {
+    background: #F7F7F7;
+
+    p {
+      margin-bottom: 3px;
+    }
+
+    .wrapper-inner {
+      padding: 25px 20px 0;
+    }
+
+    .text-lg {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 21px;
+      color: #000;
+    }
+
+    a {
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 14px;
+    }
+  }
+
+  // Main
+  .welcome-title {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .welcome-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .title {
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #BC1818;
+
+    span {
+      color: #2D2D2D;
+    }
+  }
+  .subtitle:not(:last-child) {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2D2D2D;
+  }
+  .wrapper.secondary {
+    background: #F7F7F7;
+  }
+
+  // Footer
+  .footer {
+
+    p {
+      margin-bottom: 12px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000;
+
+      &:first-child {
+        margin-bottom: 3px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      &:not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+
+    .wrapper-inner {
+      padding: 42px 20px 20px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<container>
+  <wrapper class="holidays">
+
+    <row>
+      <columns>
+        <center>
+          <h1 class="text-center">
+            Привет, Сергей!
+          </h1>
+        </center>
+      </columns>
+    </row>
+
+    {{#ifpage 'years-1'}}
+    <row class="holidays-bg" style="background-color:#C59779;background-image: url(assets/img/holidays/years-01.png)">
+    {{/ifpage}}
+    {{#ifpage 'years-2'}}
+    <row class="holidays-bg" style="background-color:#C1C5C3;background-image: url(assets/img/holidays/years-02.png)">
+    {{/ifpage}}
+    {{#ifpage 'years-3'}}
+    <row class="holidays-bg" style="background-color:#3D6A96;background-image: url(assets/img/holidays/years-03.png)">
+    {{/ifpage}}
+    {{#ifpage 'years-4'}}
+    <row class="holidays-bg" style="background-color:#474135;background-image: url(assets/img/holidays/years-04.png)">
+    {{/ifpage}}
+    {{#ifpage 'years-5'}}
+    <row class="holidays-bg" style="background-color:#20363D;background-image: url(assets/img/holidays/years-05.png)">
+    {{/ifpage}}
+    {{#ifpage 'years-6'}}
+    <row class="holidays-bg" style="background-color:#69ABCB;background-image: url(assets/img/holidays/years-06.png)">
+    {{/ifpage}}
+    {{#ifpage 'years-7'}}
+    <row class="holidays-bg" style="background-color:#000000;background-image: url(assets/img/holidays/years-07.png)">
+    {{/ifpage}}
+    {{#ifpage 'years-8'}}
+    <row class="holidays-bg" style="background-color:#3B3A21;background-image: url(assets/img/holidays/years-08.png)">
+    {{/ifpage}}
+    {{#ifpage 'years-9'}}
+    <row class="holidays-bg" style="background-color:#4343A5;background-image: url(assets/img/holidays/years-09.png)">
+    {{/ifpage}}
+    {{#ifpage 'years-10'}}
+    <row class="holidays-bg" style="background-color:#293922;background-image: url(assets/img/holidays/years-10.png)">
+    {{/ifpage}}
+
+      <columns small="12" large="9" valign="middle">
+        <p class="holidays-event">
+          {{#ifpage 'years-1'}}С годом работы в студии!{{/ifpage}}
+          {{#ifpage 'years-2'}}2 года работы в студии!{{/ifpage}}
+          {{#ifpage 'years-3' 'years-4' 'years-5'}}3 года работы в студии!{{/ifpage}}
+          {{#ifpage 'years-6'}}4 года работы в студии!{{/ifpage}}
+          {{#ifpage 'years-7'}}5 лет работы в студии!{{/ifpage}}
+          {{#ifpage 'years-8'}}6 лет работы в студии!{{/ifpage}}
+          {{#ifpage 'years-9' 'years-10'}}7 лет работы в студии!{{/ifpage}}
+        </p>
+        <p class="holidays-bonus">Сумма поступивших баллов:</p>
+        <p class="holidays-sum">1000 бонусных <br> рублей</p>
+        <p class="holidays-link">
+          <nobr>Актуальный баланс баллов доступен</nobr>
+          <nobr>в <a href="https://team.pixelplus.ru/personal/bonus/" target="_blank">кадровом портале компании</a></nobr>
+        </p>
+      </columns>
+      <columns small="12" large="3"></columns>
+
+    </row>
+
+  </wrapper>
+</container>

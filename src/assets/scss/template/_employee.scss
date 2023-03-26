@@ -1,0 +1,101 @@
+.employee {
+
+  h1 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #2B2F33;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFF;
+  }
+
+  .wrapper-inner {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &-bg {
+    margin-bottom: 16px;
+    border-radius: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    > tbody > tr > th {
+      padding-top: 25px;
+      padding-bottom: 25px;
+
+      &.first {
+        padding-right: 0 !important;
+      }
+      &.last {
+        padding-left: 10px !important;
+      }
+    }
+  }
+
+  &-statuette {
+    min-width: 168px;
+    max-width: 168px;
+    height: auto;
+    margin-left: -40px;
+    @media only screen and (max-width: 596px) {
+      margin: 0 auto !important;
+    }
+  }
+
+  &-title {
+    margin-bottom: 16px;
+    padding-left: 20px;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    line-height: 22px !important;
+    color: #FFF !important;
+  }
+  &-subtitle {
+    margin-bottom: 16px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px !important;
+  }
+  &-bonus {
+    margin-bottom: 10px !important;
+    padding-left: 20px;
+    font-weight: 700 !important;
+    font-size: 14px;
+    line-height: 16px !important;
+    text-transform: uppercase !important;
+    color: #FFF;
+
+    &-left,
+    &-right {
+      font-size: 14px;
+      font-weight: 700 !important;
+      //letter-spacing: -.025em;
+      text-transform: uppercase !important;
+
+      b {
+        display: block;
+        font-size: 48px;
+        line-height: 52px;
+        letter-spacing: normal;
+        white-space: nowrap;
+      }
+      span {
+        font-size: 13px;
+        white-space: nowrap;
+      }
+    }
+    &-left {
+      padding-left: 20px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+// Styles
+.d-block {display: block}
+.d-inline {display: inline}
+.d-inline-block {display: inline-block}
+.img {display: initial}
+
+// Header
+.header {
+
+  p {
+    margin-bottom: 0;
+  }
+
+  a {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    color: #CC0000;
+  }
+
+  .columns {
+    padding-bottom: 20px;
+  }
+
+  .phone {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #2B2F33;
+  }
+
+  .h-line th {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid #E8E8E8;
+  }
+}
+
+
+
+// Footer
+.footer {
+  //border-top: 1px solid #E8E8E8;
+
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 14px;
+    color: #CC0000;
+  }
+
+  .phone {
+    margin-bottom: 5px !important;
+
+    a {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 18px;
+      color: #2B2F33;
+    }
+  }
+
+  .h-line th {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid #E8E8E8;
+  }
+}

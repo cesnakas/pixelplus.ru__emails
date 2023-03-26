@@ -1,0 +1,66 @@
+.holidays {
+
+  h1 {
+    margin-bottom:15px;
+    font-size:20px;
+    font-weight:bold;
+    line-height:43px;
+    color:#2B2F33;
+  }
+
+  p {
+    font-style: normal;
+    color: #FFF;
+  }
+
+  .wrapper-inner {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  &-bg {
+    border-radius: 14px;
+    background-color: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .columns {
+      padding: 25px 20px !important;
+    }
+  }
+
+  &-event {
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 43px;
+  }
+
+  &-bonus {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 43px;
+    color: #FFEBD7 !important;
+  }
+
+  &-sum {
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 43px;
+    text-transform: uppercase;
+  }
+
+  &-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+    a {
+      color: #FFF;
+      text-decoration: underline;
+    }
+  }
+}

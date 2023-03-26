@@ -1,0 +1,13 @@
+@import 'settings';
+@import "variables"; // Custom settings
+@import 'foundation-emails';
+
+@import 'template/main';
+
+@import 'template/quiz';
+
+@import 'template/holidays';
+
+@import 'template/vacation';
+
+@import 'template/employee';

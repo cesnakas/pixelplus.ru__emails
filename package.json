@@ -1,0 +1,34 @@
+{
+  "name": "pixelplus.ru__emails",
+  "version": "1.0.0",
+  "description": "emails",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesnakas/pixelplus-emails.git"
+  },
+  "author": "Sergei Česnakas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cesnakas/pixelplus-emails/issues"
+  },
+  "homepage": "https://github.com/cesnakas/pixelplus-emails#readme",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-inline-css": "latest",
+    "gulp-newer": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "inky": "latest",
+    "panini": "latest",
+    "rimraf": "latest",
+    "sass": "latest"
+  }
+}

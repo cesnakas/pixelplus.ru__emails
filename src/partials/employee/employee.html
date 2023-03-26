@@ -1,0 +1,62 @@
+<container>
+  <wrapper class="employee">
+
+    <row>
+      <columns>
+        <center>
+          <h1 class="text-center">
+            Поздравляем, #NAME#!
+          </h1>
+        </center>
+      </columns>
+    </row>
+
+    {{#ifpage 'employee-1'}}
+    <row class="employee-bg" style="background-color:#f1477f;background-image: url({{root}}assets/img/employee/employee-1.png)">
+    {{/ifpage}}
+    {{#ifpage 'employee-2'}}
+    <row class="employee-bg" style="background-color:#2cd684;background-image: url({{root}}assets/img/employee/employee-2.png)">
+    {{/ifpage}}
+    {{#ifpage 'employee-3'}}
+    <row class="employee-bg" style="background-color:#49C8FF;background-image: url({{root}}assets/img/employee/employee-3.png)">
+    {{/ifpage}}
+    {{#ifpage 'employee-4'}}
+    <row class="employee-bg" style="background-color:#264574;background-image: url({{root}}assets/img/employee/employee-4.png)">
+    {{/ifpage}}
+
+      <columns small="3" large="2" valign="middle">
+        <img class="small-float-left employee-statuette" src="{{root}}assets/img/employee/statuette.png" alt="statuette">
+      </columns>
+      <columns small="9" large="10" valign="middle" style="padding-left: 15px">
+        <p class="employee-title">У нас супер-новость — вы получили звание «Сотрудник месяца» в Пиксель Плюс за #MONTH# года.</p>
+        <p class="employee-subtitle">Это значит, что у вас есть много поводов гордится собой не только за высокие результаты, но и правильное поведение, заботу о клиентах и коллегах.</p>
+        <p class="employee-bonus small-text-left">Ваши бонусы:</p>
+        <row class="collapse">
+          <columns small="6" large="6" valign="middle">
+            <p class="employee-bonus-left small-text-left">
+              <b>2000</b>
+              <span>Пиксель Бонусов</span>
+            </p>
+          </columns>
+          <columns small="6" large="6" valign="middle">
+            <p class="employee-bonus-right small-text-left">
+              <b>+2 дня</b>
+              <span>к отпуску на этот год</span>
+            </p>
+          </columns>
+        </row>
+      </columns>
+
+    </row>
+
+    <row>
+      <columns small="12" large="12" valign="middle">
+        <center>
+          <p style="text-align:center;color:#2B2F33;">Мы тоже гордимся тобой, <nobr>продолжай в том же духе =)</nobr></p>
+          <p style="text-align:center;color:#2B2F33;"><b>Ура!</b></p>
+        </center>
+      </columns>
+    </row>
+
+  </wrapper>
+</container>

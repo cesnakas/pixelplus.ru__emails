@@ -1,0 +1,44 @@
+<container>
+  <wrapper class="holidays">
+
+    <row>
+      <columns>
+        <center>
+          <h1 class="text-center">
+            Привет, Анастасия!
+          </h1>
+        </center>
+      </columns>
+    </row>
+
+    {{#ifpage 'newyear-1'}}
+    <row class="holidays-bg" style="background-color:#0E1F31;background-image: url(assets/img/holidays/newyear-01.png)">
+    {{/ifpage}}
+    {{#ifpage 'newyear-2'}}
+    <row class="holidays-bg" style="background-color:#374861;background-image: url(assets/img/holidays/newyear-02.png)">
+    {{/ifpage}}
+    {{#ifpage 'newyear-3'}}
+    <row class="holidays-bg" style="background-color:#2C3553;background-image: url(assets/img/holidays/newyear-03.png)">
+    {{/ifpage}}
+    {{#ifpage 'newyear-4'}}
+    <row class="holidays-bg" style="background-color:#544229;background-image: url(assets/img/holidays/newyear-04.png)">
+    {{/ifpage}}
+    {{#ifpage 'newyear-5'}}
+    <row class="holidays-bg" style="background-color:#CCA236;background-image: url(assets/img/holidays/newyear-05.png)">
+    {{/ifpage}}
+
+      <columns small="12" large="9" valign="middle">
+        <p class="holidays-event">C Новым годом!</p>
+        <p class="holidays-bonus">Сумма поступивших баллов:</p>
+        <p class="holidays-sum">1000 бонусных <br> рублей</p>
+        <p class="holidays-link">
+          <nobr>Актуальный баланс баллов доступен</nobr>
+          <nobr>в <a href="https://team.pixelplus.ru/personal/bonus/" target="_blank">кадровом портале компании</a></nobr>
+        </p>
+      </columns>
+      <columns small="12" large="3"></columns>
+
+    </row>
+
+  </wrapper>
+</container>
